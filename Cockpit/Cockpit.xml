@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <path>Cockpit.ac</path>
+
+    <!-- Rembrandt auto switching for glass -->
+
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <condition>
+            <greater-than>
+                <property>sim/multiplay/generic/float[6]</property>
+                <value>9</value>
+            </greater-than>
+            <property>/sim/rendering/rembrandt/enabled</property>
+        	</condition>
+            <object-name>HUDGlass</object-name>
+    </effect>
+
+    <!-- Shaders -->
+
+    <animation>
+        <type>shader</type>
+        <shader>chrome</shader>
+        <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+        <object-name>HUDGlass</object-name>
+    </animation>
+
+    <animation>
+        <type>noshadow</type>
+        <object-name>HUDGlass</object-name>
+    </animation>
+
+    <!-- Models -->
+
+    <model>
+        <path>Aircraft/Harrier-GR3/Panel/Panel.xml</path>
+    </model>
+
+    <model>
+        <object-name>Seat</object-name>
+        <path>Aircraft/Harrier-GR3/Models/Cockpit/Seat.xml</path>
+    </model>
+
+    <model>
+        <object-name>Pilot</object-name>
+        <path>Aircraft/Harrier-GR3/Models/Pilot/Pilot.xml</path>
+        <offsets>
+            <x-m>-15.3</x-m>
+            <y-m>  0.0</y-m>
+            <z-m> -5.9</z-m>
+            <pitch-deg>0.0</pitch-deg>
+        </offsets>
+        <condition>
+            <not>
+                <property>/sim/current-view/internal</property>
+            </not>
+        </condition>
+    </model>
+
+    <!-- Shaders / Materials -->
+    <animation>
+        <type>material</type>
+        <texture>panel.png</texture>
+        <object-name>FrontPanel</object-name>
+        <object-name>LeftPanel</object-name>
+        <object-name>RightPanel</object-name>
+        <object-name>Panel</object-name>
+        <object-name>Panel1</object-name>
+        <object-name>Panel2</object-name>
+        <object-name>ThrottleBase</object-name>
+        <ambient>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+        </ambient>
+        <specular>
+            <red>6.0</red>
+            <green>6.0</green>
+            <blue>6.0</blue>
+        </specular>
+        <diffuse>
+            <red>9.0</red>
+            <green>9.2</green>
+            <blue>9.0</blue>
+        </diffuse>
+    </animation>
+	
+    <animation>
+        <type>material</type>
+        <texture>hud_control.png</texture>
+        <object-name>HUDControl</object-name>
+        <ambient>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+        </ambient>
+        <specular>
+            <red>9.0</red>
+            <green>9.0</green>
+            <blue>9.0</blue>
+        </specular>
+        <diffuse>
+            <red>9.0</red>
+            <green>9.2</green>
+            <blue>9.0</blue>
+        </diffuse>
+    </animation>
+	
+    <animation>
+        <type>material</type>
+        <texture>pedal.png</texture>
+        <object-name>RPedal</object-name>
+        <object-name>RToeBrake</object-name>
+        <object-name>LPedal</object-name>
+        <object-name>LToeBrake</object-name>
+        <ambient>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+        </ambient>
+        <specular>
+            <red>9.0</red>
+            <green>9.0</green>
+            <blue>9.0</blue>
+        </specular>
+        <diffuse>
+            <red>9.0</red>
+            <green>9.2</green>
+            <blue>9.0</blue>
+        </diffuse>
+    </animation>
+	
+    <animation>
+        <type>material</type>
+        <texture>knob.png</texture>
+        <object-name>Knob</object-name>
+        <object-name>Knob.001</object-name>
+        <object-name>Knob.002</object-name>
+        <object-name>Knob.003</object-name>
+        <object-name>Knob.004</object-name>
+        <object-name>Knob.005</object-name>
+        <object-name>Knob.006</object-name>
+        <object-name>Knob.007</object-name>
+        <object-name>Knob.008</object-name>
+        <object-name>Knob.009</object-name>
+        <object-name>Knob.010</object-name>
+        <object-name>Knob.011</object-name>
+        <object-name>Knob.012</object-name>
+        <object-name>Knob.013</object-name>
+        <object-name>Knob.014</object-name>	
+        <ambient>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+        </ambient>
+        <specular>
+            <red>9.0</red>
+            <green>9.0</green>
+            <blue>9.0</blue>
+        </specular>
+        <diffuse>
+            <red>9.0</red>
+            <green>9.2</green>
+            <blue>9.0</blue>
+        </diffuse>
+    </animation>
+	
+    <animation>
+        <type>noshadow</type>
+        <object-name>HUDGlass</object-name>
+    </animation>
+
+    <!-- Stick -->
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Stick</object-name>
+        <property>controls/flight/aileron[0]</property>
+        <factor>17</factor>
+        <offset-deg>0</offset-deg>
+        <center>
+            <x-m>-15.74</x-m>
+            <y-m>0</y-m>
+            <z-m>-6.27</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Stick</object-name>
+        <property>controls/flight/elevator[0]</property>
+        <factor>17</factor>
+        <offset-deg>0</offset-deg>
+        <center>
+            <x-m>-15.74</x-m>
+            <y-m>0</y-m>
+            <z-m>-6.27</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <!-- Pedals -->
+
+    <animation>
+        <type>translate</type>
+        <object-name>LPedal</object-name>
+        <property>controls/flight/rudder[0]</property>
+        <factor>.05</factor>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>RPedal</object-name>
+        <property>controls/flight/rudder[0]</property>
+        <factor>.05</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <!-- Throttle -->
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ThrottleLever</object-name>
+        <property>controls/engines/engine/throttle</property>
+        <factor>25</factor>
+        <offset-deg>-13</offset-deg>
+        <center>
+            <x-m>-15.59</x-m>
+            <y-m>0.33</y-m>
+            <z-m>-6.47</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <!-- Nozzle Lever -->
+
+    <animation>
+        <type>rotate</type>
+        <object-name>VectorLever</object-name>
+        <property>controls/engines/engine/mixture</property>
+        <factor>25</factor>
+        <offset-deg>-13</offset-deg>
+        <center>
+            <x-m>-15.58</x-m>
+            <y-m>0.29</y-m>
+            <z-m>-6.47</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>flip.014</object-name>
+        <value>0</value>
+        <factor>180</factor>
+        <property>controls/engines/engine/starter</property>
+        <center>
+            <x-m>-15.8877</x-m>
+            <y-m>-0.306357</y-m>
+            <z-m>-5.98424</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>flip.014</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <factor>180</factor>
+                <command>property-toggle</command>
+                <property>controls/engines/engine/starter</property>
+            </binding>
+        </action>	
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>flip.012</object-name>
+        <property>empty/holder-bool-0</property>
+        <factor>180</factor>
+        <center>
+            <x-m>-15.8877</x-m>
+            <y-m>-0.246357</y-m>
+            <z-m>-5.98424</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>    
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>flip.012</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <factor>180</factor>
+                <min>0</min>
+                <max>1</max>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-0</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <empty>
+        <holder-bool-0 type="bool">0</holder-bool-0>
+    </empty>
+    
+</PropertyList>

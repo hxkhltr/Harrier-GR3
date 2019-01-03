@@ -69,6 +69,7 @@
         <object-name>Panel</object-name>
         <object-name>Panel1</object-name>
         <object-name>Panel2</object-name>
+        <object-name>PanelMount</object-name>
         <object-name>ThrottleBase</object-name>
         <ambient>
             <red>0.5</red>

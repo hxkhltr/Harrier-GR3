@@ -14,10 +14,49 @@
                 <value>9</value>
             </greater-than>
             <property>/sim/rendering/rembrandt/enabled</property>
-        	</condition>
-            <object-name>HUDGlass</object-name>
+        </condition>
+        <object-name>HUDGlass</object-name>
     </effect>
-
+    
+    <!-- Cockpit ALS shadow -->
+    
+    <effect>
+        <inherits-from>Aircraft/Harrier-GR3/Models/Effects/Interior/Harrier-GR3-interior</inherits-from>
+        <object-name>Cockpit</object-name>
+        <object-name>Hub</object-name>
+        <object-name>FrontPanel</object-name>
+        <object-name>LeftPanel</object-name>
+        <object-name>RightPanel</object-name>
+        <object-name>Panel</object-name>
+        <object-name>Panel1</object-name>
+        <object-name>Panel2</object-name>
+        <object-name>PanelMount</object-name>
+        <object-name>ThrottleBase</object-name>
+        <object-name>HUDControl</object-name>
+        <object-name>RPedal</object-name>
+        <object-name>RToeBrake</object-name>
+        <object-name>LPedal</object-name>
+        <object-name>LToeBrake</object-name>
+        <object-name>Knob</object-name>
+        <object-name>Knob.001</object-name>
+        <object-name>Knob.002</object-name>
+        <object-name>Knob.003</object-name>
+        <object-name>Knob.004</object-name>
+        <object-name>Knob.005</object-name>
+        <object-name>Knob.006</object-name>
+        <object-name>Knob.007</object-name>
+        <object-name>Knob.008</object-name>
+        <object-name>Knob.009</object-name>
+        <object-name>Knob.010</object-name>
+        <object-name>Knob.011</object-name>
+        <object-name>Knob.012</object-name>
+        <object-name>Knob.013</object-name>
+        <object-name>Knob.014</object-name>	
+        <object-name>Stick</object-name>
+        <object-name>ThrottleLever</object-name>
+        <object-name>VectorLever</object-name>
+    </effect>
+     
     <!-- Shaders -->
 
     <animation>

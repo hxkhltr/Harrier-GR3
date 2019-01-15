@@ -55,6 +55,7 @@
         <object-name>Stick</object-name>
         <object-name>ThrottleLever</object-name>
         <object-name>VectorLever</object-name>
+        <object-name>HydGuage</object-name>
     </effect>
      
     <!-- Shaders -->
@@ -110,6 +111,7 @@
         <object-name>Panel2</object-name>
         <object-name>PanelMount</object-name>
         <object-name>ThrottleBase</object-name>
+        <object-name>HydGuage</object-name>
         <ambient>
             <red>0.5</red>
             <green>0.5</green>

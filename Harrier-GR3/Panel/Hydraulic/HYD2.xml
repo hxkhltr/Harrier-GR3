@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>Guage.ac</path>
+    <animation>
+        <type>material</type>
+        <texture>HYD2.png</texture>
+        <object-name>Base</object-name>
+    </animation>
+
+</PropertyList>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>Guage.ac</path>
+    <animation>
+	    <type>material</type>
+	    <texture>HYD1.png</texture>
+	    <object-name>Base</object-name>
+    </animation>
+    <animation>
+	    <type>rotate</type>
+	    <object-name>Needle</object-name>
+	    <factor>275.0</factor>
+	    <axis>
+		    <z>-1.0</z>
+	    </axis>
+    
+    </animation>
+
+</PropertyList>

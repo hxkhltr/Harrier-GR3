@@ -6,10 +6,12 @@ This is not the full Harrier-GR3 model.  This is interior cockpit mod intended t
 
 Changes:
 
-Last modified 1/4/19
+Last modified 1/14/19
 
 -Added cockpit textures
 
 -Fixed throttle lever and vector lever animations so they rotate smoothly along base
 
 -Added cockpit shadows
+
+-added extra instrumentation ( not yet hooked up to aircraft systems )

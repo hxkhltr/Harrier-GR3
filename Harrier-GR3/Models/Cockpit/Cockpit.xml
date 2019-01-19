@@ -18,45 +18,7 @@
         <object-name>HUDGlass</object-name>
     </effect>
     
-    <!-- Cockpit ALS shadow -->
     
-    <effect>
-        <inherits-from>Aircraft/Harrier-GR3/Models/Effects/Interior/Harrier-GR3-interior</inherits-from>
-        <object-name>Cockpit</object-name>
-        <object-name>Hub</object-name>
-        <object-name>FrontPanel</object-name>
-        <object-name>LeftPanel</object-name>
-        <object-name>RightPanel</object-name>
-        <object-name>Panel</object-name>
-        <object-name>Panel1</object-name>
-        <object-name>Panel2</object-name>
-        <object-name>PanelMount</object-name>
-        <object-name>ThrottleBase</object-name>
-        <object-name>HUDControl</object-name>
-        <object-name>RPedal</object-name>
-        <object-name>RToeBrake</object-name>
-        <object-name>LPedal</object-name>
-        <object-name>LToeBrake</object-name>
-        <object-name>Knob</object-name>
-        <object-name>Knob.001</object-name>
-        <object-name>Knob.002</object-name>
-        <object-name>Knob.003</object-name>
-        <object-name>Knob.004</object-name>
-        <object-name>Knob.005</object-name>
-        <object-name>Knob.006</object-name>
-        <object-name>Knob.007</object-name>
-        <object-name>Knob.008</object-name>
-        <object-name>Knob.009</object-name>
-        <object-name>Knob.010</object-name>
-        <object-name>Knob.011</object-name>
-        <object-name>Knob.012</object-name>
-        <object-name>Knob.013</object-name>
-        <object-name>Knob.014</object-name>	
-        <object-name>Stick</object-name>
-        <object-name>ThrottleLever</object-name>
-        <object-name>VectorLever</object-name>
-        <object-name>HydGuage</object-name>
-    </effect>
      
     <!-- Shaders -->
 
@@ -98,12 +60,15 @@
             </not>
         </condition>
     </model>
-
-    <!-- Shaders / Materials -->
-    <animation>
-        <type>material</type>
-        <texture>panel.png</texture>
+    
+    <!-- Cockpit ALS shadow -->
+    
+    <effect>
+        <inherits-from>Aircraft/Harrier-GR3/Models/Effects/Interior/Harrier-GR3-interior</inherits-from>
+        <object-name>Cockpit</object-name>
+        <object-name>Hub</object-name>
         <object-name>FrontPanel</object-name>
+        <object-name>LeftSubPanel</object-name>
         <object-name>LeftPanel</object-name>
         <object-name>RightPanel</object-name>
         <object-name>Panel</object-name>
@@ -111,21 +76,82 @@
         <object-name>Panel2</object-name>
         <object-name>PanelMount</object-name>
         <object-name>ThrottleBase</object-name>
+        <object-name>HUDControl</object-name>
+        <object-name>RPedal</object-name>
+        <object-name>RToeBrake</object-name>
+        <object-name>LPedal</object-name>
+        <object-name>LToeBrake</object-name>
+        <object-name>Knob</object-name>
+        <object-name>Knob.001</object-name>
+        <object-name>Knob.002</object-name>
+        <object-name>Knob.003</object-name>
+        <object-name>Knob.004</object-name>
+        <object-name>Knob.005</object-name>
+        <object-name>Knob.006</object-name>
+        <object-name>Knob.007</object-name>
+        <object-name>Knob.008</object-name>
+        <object-name>Knob.009</object-name>
+        <object-name>Knob.010</object-name>
+        <object-name>Knob.011</object-name>
+        <object-name>Knob.012</object-name>
+        <object-name>Knob.013</object-name>
+        <object-name>Knob.014</object-name>	
+        <object-name>Stick</object-name>
+        <object-name>ThrottleLever</object-name>
+        <object-name>VectorLever</object-name>
         <object-name>HydGuage</object-name>
+        <object-name>GearControl</object-name>
+        <object-name>GearUp</object-name>
+        <object-name>GearDown</object-name>
+        <object-name>ManFuelMount</object-name>
+        <object-name>JPTLMount</object-name>
+        <object-name>JPTLWire</object-name>
+        <object-name>conduit</object-name>
+        <object-name>LeftSwitchMount</object-name>
+        <object-name>WarningPanel</object-name>
+        <object-name>RightMount</object-name>
+        <object-name>SwitchGuard</object-name>
+    </effect>
+
+    <!-- Shaders / Materials -->
+    <animation>
+        <type>material</type>
+        <texture>Aircraft/Harrier-GR3/Models/Cockpit/panel.png</texture>
+        <object-name>Cockpit</object-name>
+        <object-name>FrontPanel</object-name>
+        <object-name>LeftPanel</object-name>
+        <object-name>LeftSubPanel</object-name>
+        <object-name>RightPanel</object-name>
+        <object-name>Panel</object-name>
+        <object-name>Panel1</object-name>
+        <object-name>Panel2</object-name>
+        <object-name>PanelMount</object-name>
+        <object-name>ThrottleBase</object-name>
+        <object-name>HydGuage</object-name>
+        <object-name>GearUp</object-name>
+        <object-name>GearDown</object-name>
+        <object-name>ManFuelMount</object-name>
+        <object-name>JPTLMount</object-name>
+        <object-name>JPTLWire</object-name>
+        <object-name>conduit</object-name>
+        <object-name>LeftSwitchMount</object-name>
+        <object-name>WarningPanel</object-name>
+        <object-name>RightMount</object-name>
+        <object-name>SwitchGuard</object-name>
         <ambient>
             <red>0.5</red>
             <green>0.5</green>
             <blue>0.5</blue>
         </ambient>
         <specular>
-            <red>6.0</red>
-            <green>6.0</green>
-            <blue>6.0</blue>
+            <red>0.6</red>
+            <green>0.6</green>
+            <blue>0.6</blue>
         </specular>
         <diffuse>
-            <red>9.0</red>
-            <green>9.2</green>
-            <blue>9.0</blue>
+            <red>0.9</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
         </diffuse>
     </animation>
 	
@@ -133,20 +159,54 @@
         <type>material</type>
         <texture>hud_control.png</texture>
         <object-name>HUDControl</object-name>
+        <object-name>GearControl</object-name>
+        <object-name>Hub</object-name>
         <ambient>
             <red>0.5</red>
             <green>0.5</green>
             <blue>0.5</blue>
         </ambient>
         <specular>
-            <red>9.0</red>
-            <green>9.0</green>
-            <blue>9.0</blue>
+            <red>0.9</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
         </specular>
         <diffuse>
-            <red>9.0</red>
-            <green>9.2</green>
-            <blue>9.0</blue>
+            <red>0.9</red>
+            <green>0.92</green>
+            <blue>0.9</blue>
+        </diffuse>
+    </animation>
+    
+    
+    <animation>
+        <type>material</type>
+        <object-name>WarningLight</object-name>
+        <condition>
+            <less-than>
+                <property>consumables/fuel/total-fuel-norm</property>
+                <value type="double">0.25</value>
+            </less-than>
+        </condition>
+        <emission>
+            <red>8.0</red>
+            <green>0.0</green>
+            <blue>0.0</blue>
+        </emission>
+        <ambient>
+            <red>1.2</red>
+            <green>0.1</green>
+            <blue>0.0</blue>
+        </ambient>
+        <specular>
+            <red>1.0</red>
+            <green>0.0</green>
+            <blue>0.0</blue>
+        </specular>
+        <diffuse>
+            <red>1.0</red>
+            <green>0.0</green>
+            <blue>0.0</blue>
         </diffuse>
     </animation>
 	
@@ -163,14 +223,14 @@
             <blue>0.5</blue>
         </ambient>
         <specular>
-            <red>9.0</red>
-            <green>9.0</green>
-            <blue>9.0</blue>
+            <red>0.9</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
         </specular>
         <diffuse>
-            <red>9.0</red>
-            <green>9.2</green>
-            <blue>9.0</blue>
+            <red>0.9</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
         </diffuse>
     </animation>
 	
@@ -198,14 +258,14 @@
             <blue>0.5</blue>
         </ambient>
         <specular>
-            <red>9.0</red>
-            <green>9.0</green>
-            <blue>9.0</blue>
+            <red>0.9</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
         </specular>
         <diffuse>
-            <red>9.0</red>
-            <green>9.2</green>
-            <blue>9.0</blue>
+            <red>0.9</red>
+            <green>0.92</green>
+            <blue>0.9</blue>
         </diffuse>
     </animation>
 	
@@ -279,11 +339,13 @@
     </animation>
 
     <!-- Throttle -->
-
+    
     <animation>
-        <type>rotate</type>
+        <type>knob</type>
         <object-name>ThrottleLever</object-name>
         <property>controls/engines/engine/throttle</property>
+        <drag-direction>vertical</drag-direction>
+        <drag-scale-px>-1px</drag-scale-px>
         <factor>25</factor>
         <offset-deg>-13</offset-deg>
         <center>
@@ -296,14 +358,35 @@
             <y>-1</y>
             <z>0</z>
         </axis>
+        <action>
+            <binding>
+                <command>property-adjust</command>
+                <min>0</min>
+                <max>1</max>
+                <repeatable>true</repeatable>
+                <wrap>false</wrap>
+                <interval-sec>0.1</interval-sec>
+                <factor>-0.01</factor>
+                <property>controls/engines/engine/throttle</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>ThrottleLever</tooltip-id>
+                <label>Throttle</label>
+            </binding>
+        </hovered>	
     </animation>
 
     <!-- Nozzle Lever -->
 
     <animation>
-        <type>rotate</type>
+        <type>knob</type>
         <object-name>VectorLever</object-name>
         <property>controls/engines/engine/mixture</property>
+        <drag-direction>vertical</drag-direction>
+        <drag-scale-px>-1px</drag-scale-px>
         <factor>25</factor>
         <offset-deg>-13</offset-deg>
         <center>
@@ -316,63 +399,199 @@
             <y>-1</y>
             <z>0</z>
         </axis>
+        <action>
+            <binding>
+                <command>property-adjust</command>
+                <min>0</min>
+                <max>1</max>
+                <repeatable>true</repeatable>
+                <wrap>false</wrap>
+                <interval-sec>0.1</interval-sec>
+                <factor>-0.01</factor>
+                <property>controls/engines/engine/mixture</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>VectorLever</tooltip-id>
+                <label>Vector Lever( m/M )</label>
+            </binding>
+        </hovered>	
     </animation>
     
+    <!-- manual fuel left console-->
+    
     <animation>
-        <type>rotate</type>
-        <object-name>flip.014</object-name>
-        <value>0</value>
-        <factor>180</factor>
-        <property>controls/engines/engine/starter</property>
+        <type>knob</type>
+        <object-name>toggleSwitch.000</object-name>
+        <drag-direction>vertical</drag-direction>
+        <drag-scale-px>-10px</drag-scale-px>
+        <property>empty/holder-float</property>
+        <value>1.0</value>
+        <step>1.0</step>
+        <factor>-30</factor>
         <center>
-            <x-m>-15.8877</x-m>
-            <y-m>-0.306357</y-m>
-            <z-m>-5.98424</z-m>
+            <x-m>-15.7799</x-m>
+            <y-m>-0.355247</y-m>
+            <z-m>-6.07141</z-m>
         </center>
         <axis>
-            <x>1</x>
-            <y>0</y>
+            <x>0</x>
+            <y>1</y>
             <z>0</z>
         </axis>
+        <action>
+            <repeatable>false</repeatable>
+            <binding>
+                <factor>-1.0</factor>
+                <min>0.0</min>
+                <max>2.0</max>
+                <command>property-adjust</command>
+                <property>empty/holder-float</property>
+            </binding>
+        </action>
+        <release>
+            <binding>
+                <command>property-adjust</command>
+                <step>1.0</step>
+                <property>empty/holder-float</property>
+                <min>1.0</min>
+                <max>1.0</max>
+            </binding>
+        </release>	
     </animation>
     
+    <!-- Jet Pipe Temperature Limit switch -->
+    
     <animation>
-        <type>pick</type>
+        <type>knob</type>
+        <object-name>JPTLSwitch</object-name>
+        <drag-direction>vertical</drag-direction>
+        <drag-scale-px>-10px</drag-scale-px>
+        <property>empty/holder-float-1</property>
+        <factor>-90</factor>
+        <center>
+            <x-m>-15.7521</x-m>
+            <y-m>-0.359828</y-m>
+            <z-m>-6.01326</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+        <action>
+            <repeatable>false</repeatable>
+            <binding>
+                <factor>-1.0</factor>
+                <min>0.0</min>
+                <max>1.0</max>
+                <command>property-adjust</command>
+                <property>empty/holder-float-1</property>
+            </binding>
+        </action>      
+    </animation>
+    
+    <!-- bottom left panel -->
+    
+    <animation>
+        <type>knob</type>
         <object-name>flip.014</object-name>
+        <property>empty/holder-bool-1</property>
+        <value>0</value>
+        <factor>-30</factor>
+        <center>
+            <x-m>-15.8925</x-m>
+            <y-m>-0.306357</y-m>
+            <z-m>-5.98861</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
         <action>
             <button>0</button>
+            <repeatable>false</repeatable>
             <binding>
-                <factor>180</factor>
                 <command>property-toggle</command>
-                <property>controls/engines/engine/starter</property>
+                <property>empty/holder-bool-1</property>
             </binding>
         </action>	
     </animation>
     
     <animation>
-        <type>rotate</type>
-        <object-name>flip.012</object-name>
-        <property>empty/holder-bool-0</property>
-        <factor>180</factor>
+        <type>knob</type>
+        <object-name>flip.013</object-name>
+        <property>empty/holder-bool-9</property>
+        <value>0</value>
+        <factor>-30</factor>
         <center>
-            <x-m>-15.8877</x-m>
-            <y-m>-0.246357</y-m>
-            <z-m>-5.98424</z-m>
+            <x-m>-15.8925</x-m>
+            <y-m>-0.306357</y-m>
+            <z-m>-5.98861</z-m>
         </center>
         <axis>
-            <x>1</x>
-            <y>0</y>
+            <x>0</x>
+            <y>1</y>
             <z>0</z>
-        </axis>    
+        </axis>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-9</property>
+            </binding>
+        </action>	
     </animation>
     
     <animation>
-        <type>pick</type>
-        <object-name>flip.012</object-name>
+        <type>knob</type>
+        <object-name>flip.004</object-name>
+        <property>empty/holder-bool-10</property>
+        <value>0</value>
+        <factor>-30</factor>
+        <center>
+            <x-m>-15.8925</x-m>
+            <y-m>-0.306357</y-m>
+            <z-m>-5.98861</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
         <action>
             <button>0</button>
+            <repeatable>false</repeatable>
             <binding>
-                <factor>180</factor>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-10</property>
+            </binding>
+        </action>	
+    </animation>
+    
+    <animation>
+        <type>knob</type>
+        <object-name>flip.012</object-name>
+        <property>empty/holder-bool-0</property>
+        <factor>-30</factor>
+        <center>
+            <x-m>-15.8925</x-m>
+            <y-m>-0.246357</y-m>
+            <z-m>-5.98861</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>    
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
                 <min>0</min>
                 <max>1</max>
                 <command>property-toggle</command>
@@ -381,8 +600,239 @@
         </action>
     </animation>
     
+    <!-- Weapons panel?  bottom center left panel -->
+    
+    <animation>
+        <type>knob</type>
+        <object-name>flip.000</object-name>
+        <property>empty/holder-bool-3</property>
+        <factor>-30</factor>
+        <center>
+            <x-m>-15.8818</x-m>
+            <y-m>-0.205032</y-m>
+            <z-m>-6.02135</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>    
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <min>0</min>
+                <max>1</max>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-3</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>knob</type>
+        <object-name>flip.003</object-name>
+        <property>empty/holder-bool-4</property>
+        <factor>-30</factor>
+        <center>
+            <x-m>-15.8818</x-m>
+            <y-m>-0.189614</y-m>
+            <z-m>-6.02135</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>    
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <min>0</min>
+                <max>1</max>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-4</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>knob</type>
+        <object-name>flip.015</object-name>
+        <property>empty/holder-bool-5</property>
+        <factor>-30</factor>
+        <center>
+            <x-m>-15.8818</x-m>
+            <y-m>-0.169614</y-m>
+            <z-m>-6.02135</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>    
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <min>0</min>
+                <max>1</max>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-5</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>knob</type>
+        <object-name>flip.016</object-name>
+        <property>empty/holder-bool-6</property>
+        <factor>-30</factor>
+        <center>
+            <x-m>-15.8818</x-m>
+            <y-m>-0.149614</y-m>
+            <z-m>-6.02135</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>    
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <min>0</min>
+                <max>1</max>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-6</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>knob</type>
+        <object-name>flip.017</object-name>
+        <property>empty/holder-bool-7</property>
+        <factor>-30</factor>
+        <center>
+            <x-m>-15.8818</x-m>
+            <y-m>-0.129614</y-m>
+            <z-m>-6.02135</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>    
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <min>0</min>
+                <max>1</max>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-7</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <!-- gear control panel-->
+    
+    <animation>
+        <type>knob</type>
+        <object-name>toggleSwitch.003</object-name>
+        <property>empty/holder-bool-2</property>
+        <factor>45</factor>
+        <center>
+            <x-m>-15.8121</x-m>
+            <y-m>-0.282793</y-m>
+            <z-m>-6.11112</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>    
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <min>0</min>
+                <max>1</max>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-2</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>slider</type>
+        <object-name>GearUp</object-name>
+        <property>controls/gear/gear-down</property>
+        <factor>0.002</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <action>
+            <binding>
+                <command>property-assign</command>
+                <value>false</value>
+                <property>controls/gear/gear-down</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>GearUp</tooltip-id>
+                <label>Gear Up</label>
+            </binding>
+        </hovered>
+    </animation>
+    
+    <animation>
+        <type>slider</type>
+        <object-name>GearDown</object-name>
+        <property>controls/gear/gear-down</property>
+        <factor>0.000</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <action>
+            <binding>
+                <command>property-assign</command>
+                <value>true</value>
+                <property>controls/gear/gear-down</property>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>GearDown</tooltip-id>
+                <label>Gear Down</label>
+            </binding>
+        </hovered>
+    </animation>
+    
+    <!-- Place holder variables to test switches of unknown purpose -->
     <empty>
         <holder-bool-0 type="bool">0</holder-bool-0>
+        <holder-bool-1 type="bool">0</holder-bool-1>
+        <holder-bool-2 type="bool">0</holder-bool-2>
+        <holder-bool-3 type="bool">0</holder-bool-3>
+        <holder-bool-4 type="bool">0</holder-bool-4>
+        <holder-bool-5 type="bool">0</holder-bool-5>
+        <holder-bool-6 type="bool">0</holder-bool-6>
+        <holder-bool-7 type="bool">0</holder-bool-7>
+        <holder-bool-8 type="bool">0</holder-bool-8>
+        <holder-bool-9 type="bool">0</holder-bool-9>
+        <holder-bool-10 type="bool">0</holder-bool-10>
+        <holder-float type="float">1.0</holder-float>
+        <holder-float-1 type="float">1.0</holder-float-1>
     </empty>
     
 </PropertyList>

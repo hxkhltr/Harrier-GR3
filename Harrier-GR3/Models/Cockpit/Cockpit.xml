@@ -109,8 +109,9 @@
         <object-name>conduit</object-name>
         <object-name>LeftSwitchMount</object-name>
         <object-name>WarningPanel</object-name>
-        <object-name>RightMount</object-name>
         <object-name>SwitchGuard</object-name>
+        <object-name>Radio</object-name>
+        <object-name>Rail</object-name>
     </effect>
 
     <!-- Shaders / Materials -->
@@ -136,8 +137,9 @@
         <object-name>conduit</object-name>
         <object-name>LeftSwitchMount</object-name>
         <object-name>WarningPanel</object-name>
-        <object-name>RightMount</object-name>
         <object-name>SwitchGuard</object-name>
+        <object-name>Radio</object-name>
+        <object-name>Rail</object-name>
         <ambient>
             <red>0.5</red>
             <green>0.5</green>
@@ -432,9 +434,9 @@
         <step>1.0</step>
         <factor>-30</factor>
         <center>
-            <x-m>-15.7799</x-m>
-            <y-m>-0.355247</y-m>
-            <z-m>-6.07141</z-m>
+            <x-m>-15.7777</x-m>
+            <y-m>-0.356886</y-m>
+            <z-m>-6.04996</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -472,9 +474,9 @@
         <property>empty/holder-float-1</property>
         <factor>-90</factor>
         <center>
-            <x-m>-15.7521</x-m>
-            <y-m>-0.359828</y-m>
-            <z-m>-6.01326</z-m>
+            <x-m>-15.7519</x-m>
+            <y-m>-0.359256</y-m>
+            <z-m>-5.98885</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -737,6 +739,33 @@
         </action>
     </animation>
     
+    <animation>
+        <type>knob</type>
+        <object-name>toggleSwitch.001</object-name>
+        <property>empty/holder-bool-11</property>
+        <factor>-90</factor>
+        <center>
+            <x-m>-15.7189</x-m>
+            <y-m>0.376254</y-m>
+            <z-m>-5.89414</z-m>
+        </center>
+        <axis>
+            <x>0.5</x>
+            <y>0.868</y>
+            <z>0</z>
+        </axis>    
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <min>0</min>
+                <max>1</max>
+                <command>property-toggle</command>
+                <property>empty/holder-bool-11</property>
+            </binding>
+        </action>
+    </animation>
+    
     <!-- gear control panel-->
     
     <animation>
@@ -830,7 +859,7 @@
         <holder-bool-7 type="bool">0</holder-bool-7>
         <holder-bool-8 type="bool">0</holder-bool-8>
         <holder-bool-9 type="bool">0</holder-bool-9>
-        <holder-bool-10 type="bool">0</holder-bool-10>
+        <holder-bool-11 type="bool">0</holder-bool-11>
         <holder-float type="float">1.0</holder-float>
         <holder-float-1 type="float">1.0</holder-float-1>
     </empty>

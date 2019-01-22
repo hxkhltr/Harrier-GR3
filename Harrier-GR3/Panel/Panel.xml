@@ -270,9 +270,9 @@
         <name>HYD1</name>
         <path>Aircraft/Harrier-GR3/Panel/Hydraulic/HYD1.xml</path>
         <offsets>
-            <x-m>-15.60882</x-m>
+            <x-m>-15.6211</x-m>
             <y-m>-0.37442</y-m>
-            <z-m>-6.08508</z-m>
+            <z-m>-6.06494</z-m>
         </offsets>
     </model>
     
@@ -280,9 +280,9 @@
         <name>HYD2</name>
         <path>Aircraft/Harrier-GR3/Panel/Hydraulic/HYD2.xml</path>
         <offsets>
-            <x-m>-15.64465</x-m>
+            <x-m>-15.65693</x-m>
             <y-m>-0.37442</y-m>
-            <z-m>-6.08508</z-m>
+            <z-m>-6.06494</z-m>
         </offsets>
     </model>
     
@@ -290,9 +290,9 @@
         <name>BrakePress</name>
         <path>Aircraft/Harrier-GR3/Panel/Hydraulic/BrakePress.xml</path>
         <offsets>
-            <x-m>-15.68061</x-m>
+            <x-m>-15.69289</x-m>
             <y-m>-0.37442</y-m>
-            <z-m>-6.08508</z-m>
+            <z-m>-6.06494</z-m>
         </offsets>
     </model>
     
@@ -300,9 +300,9 @@
         <name>BrakeAcc</name>
         <path>Aircraft/Harrier-GR3/Panel/Hydraulic/BrakeAcc.xml</path>
         <offsets>
-            <x-m>-15.71507</x-m>
+            <x-m>-15.72735</x-m>
             <y-m>-0.37442</y-m>
-            <z-m>-6.08508</z-m>
+            <z-m>-6.06494</z-m>
         </offsets>
     </model>
     
@@ -310,9 +310,9 @@
         <name>SteerAcc</name>
         <path>Aircraft/Harrier-GR3/Panel/Hydraulic/SteerAcc.xml</path>
         <offsets>
-            <x-m>-15.74691</x-m>
+            <x-m>-15.75919</x-m>
             <y-m>-0.37442</y-m>
-            <z-m>-6.08508</z-m>
+            <z-m>-6.06494</z-m>
         </offsets>
     </model>
 

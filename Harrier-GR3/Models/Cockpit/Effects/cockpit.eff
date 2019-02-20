@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+    <name>Harrier-GR3-cockpit</name>
+    <inherits-from>Aircraft/Harrier-GR3/Models/Effects/Interior/Harrier-GR3-interior</inherits-from>
+    <parameters>
+        <opacity-cube-center type="vec3d" n="0">-15.305 0.0 -5.73755</opacity-cube-center>
+    </parameters>
+</PropertyList>

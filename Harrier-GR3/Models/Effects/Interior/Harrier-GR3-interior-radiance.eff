@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+    <name>Harrier-GR3-interior-radiance</name>
+    <inherits-from>Effects/model-interior</inherits-from>
+    <parameters>
+        <texture n="4">
+            <type>cubemap</type>
+            <images>
+                <positive-x>Aircraft/Harrier-GR3/Models/Effects/Interior/shadow_pz.png</positive-x>
+                <negative-x>Aircraft/Harrier-GR3/Models/Effects/Interior/shadow_pz.png</negative-x>
+                <positive-y>Aircraft/Harrier-GR3/Models/Effects/Interior/shadow_pz.png</positive-y>
+                <negative-y>Aircraft/Harrier-GR3/Models/Effects/Interior/shadow_pz.png</negative-y>
+                <positive-z>Aircraft/Harrier-GR3/Models/Effects/Interior/shadow_pz.png</positive-z>
+                <negative-z>Aircraft/Harrier-GR3/Models/Effects/Interior/shadow_pz.png</negative-z>
+            </images>
+        </texture>
+        <light-filter-one type="vec3d">0.5 0.5 0.5</light-filter-one>
+        <light-filter-two type="vec3d">0.9 0.2 0.2</light-filter-two>
+        <light-radius type="float">13</light-radius>
+        <irradiance-map-type type="int">2</irradiance-map-type>
+        <irradiance-map-strength type="float">.2</irradiance-map-strength>
+        <residual-ambience-r type="float">0.05</residual-ambience-r>
+        <residual-ambience-g type="float">0.025</residual-ambience-g>
+        <residual-ambience-b type="float">0.025</residual-ambience-b>
+        <ra-irradiance-map-type type="int">0</ra-irradiance-map-type>
+        <ra-irradiance-map-strength type="float">1</ra-irradiance-map-strength>
+    </parameters>
+</PropertyList>

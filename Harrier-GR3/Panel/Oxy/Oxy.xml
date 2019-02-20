@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>../Hydraulic/Guage.ac</path>
+    
+    <effect>
+        <inherits-from>Aircraft/Harrier-GR3/Models/Effects/Interior/Harrier-GR3-interior-radiance</inherits-from>
+    </effect>
+    
+    <animation>
+        <type>material</type>
+        <object-name>Base</object-name>
+        <texture>oxy.png</texture>
+        <emission>
+            <red>.4</red>
+            <green>.4</green>
+            <blue>.4</blue>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>Needle</object-name>
+        <factor>-80.0</factor>
+        <offset-deg>-60</offset-deg>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+</PropertyList>

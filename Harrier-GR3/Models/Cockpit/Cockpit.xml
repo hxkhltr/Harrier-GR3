@@ -5,6 +5,8 @@
     <path>Cockpit.ac</path>
 
     <!-- Rembrandt auto switching for glass -->
+    
+    
 
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
@@ -64,7 +66,7 @@
     <!-- Cockpit ALS shadow -->
     
     <effect>
-        <inherits-from>Aircraft/Harrier-GR3/Models/Effects/Interior/Harrier-GR3-interior</inherits-from>
+        <inherits-from>Aircraft/Harrier-GR3/Models/Cockpit/Effects/cockpit</inherits-from>
         <object-name>Cockpit</object-name>
         <object-name>Hub</object-name>
         <object-name>FrontPanel</object-name>
@@ -112,6 +114,10 @@
         <object-name>SwitchGuard</object-name>
         <object-name>Radio</object-name>
         <object-name>Rail</object-name>
+        <object-name>RightFrontPlacard</object-name>
+        <object-name>RightConsoleKnob</object-name>
+        <object-name>RightGaugeMount</object-name>
+        <object-name>Recorder</object-name>
     </effect>
 
     <!-- Shaders / Materials -->
@@ -140,6 +146,10 @@
         <object-name>SwitchGuard</object-name>
         <object-name>Radio</object-name>
         <object-name>Rail</object-name>
+        <object-name>RightFrontPlacard</object-name>
+        <object-name>RightConsoleKnob</object-name>
+        <object-name>RightGaugeMount</object-name>
+        <object-name>Recorder</object-name>
         <ambient>
             <red>0.5</red>
             <green>0.5</green>
@@ -863,5 +873,9 @@
         <holder-float type="float">1.0</holder-float>
         <holder-float-1 type="float">1.0</holder-float-1>
     </empty>
+    
+    
+    
+    
     
 </PropertyList>
